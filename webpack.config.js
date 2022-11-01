@@ -4,7 +4,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: "https://wsi-save-favorites-mfe.netlify.app/",
   },
 
   resolve: {
@@ -49,7 +49,7 @@ module.exports = {
       name: "wsi_save_favorites",
       filename: "remoteEntry.js",
       remotes: {
-        remote: "wsi_global@http://localhost:8080/remoteEntry.js",
+        remote: "wsi_global@https://wsi-global-mfe.netlify.app/remoteEntry.js",
       },
       exposes: {},
       shared: require("./package.json").dependencies,
